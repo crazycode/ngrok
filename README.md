@@ -9,6 +9,10 @@ status](https://travis-ci.org/inconshreveable/ngrok.svg)](https://travis-ci.org/
 ngrok is a reverse proxy that creates a secure tunnel from a public endpoint to a locally running web service.
 ngrok captures and analyzes all traffic over the tunnel for later inspection and replay.
 
+## 对ngrox 1.x的改进
+
+1. 支持转发到监听端口的请求(例如监听9080,然后nginx将80端口的请求转发过来)
+
 ## ngrok 2.x
 
 ngrok 2.x is the successor to 1.x and the focus of all current development effort. Its source code is not available.
@@ -30,7 +34,7 @@ ngrok.com ran a pay-what-you-want hosted service of 1.x from early 2013 until Ap
 
 ## Production Use
 
-**DO NOT RUN THIS VERSION OF NGROK (1.X) IN PRODUCTION**. Both the client and server are known to have serious reliability issues including memory and file descriptor leaks as well as crashes. There is also no HA story as the server is a SPOF. You are advised to run 2.0 for any production quality system. 
+**DO NOT RUN THIS VERSION OF NGROK (1.X) IN PRODUCTION**. Both the client and server are known to have serious reliability issues including memory and file descriptor leaks as well as crashes. There is also no HA story as the server is a SPOF. You are advised to run 2.0 for any production quality system.
 
 ## What can I do with ngrok?
 - Expose any http service behind a NAT or firewall to the internet on a subdomain of ngrok.com
